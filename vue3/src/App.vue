@@ -5,20 +5,18 @@ import widget from 'lib/src/widget.vue'
 </script>
 
 <template>
-  <div id="app">
-    <header>
-      <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+  <header>
+    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
 
-      <div class="wrapper">
-        <HelloWorld msg="THIS IS VUE 2" style="border:1px dashed green"/>
-        <widget msg="Some message from VUE2 APP"/>
-      </div>
-    </header>
+    <div class="wrapper">
+      <HelloWorld msg="THIS IS VUE 3" style="border:1px dashed red" />
+      <widget msg="vue3 using now the WIDGET"/>
+    </div>
+  </header>
 
-    <main>
-      <TheWelcome />
-    </main>
-  </div>
+  <main>
+    <TheWelcome />
+  </main>
 </template>
 
 <style scoped>
