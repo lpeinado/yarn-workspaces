@@ -13,8 +13,9 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "vue": "^3.3.2",
-    "lib": "1.0.0"
+    "@vue/compat": "^3.3.2",
+    "lib": "1.0.0",
+    "vue": "^3.3.2"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.2.0",

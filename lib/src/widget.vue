@@ -1,7 +1,7 @@
 <template>
   <div class="widget" style="padding:15px; border:1px dashed blue">
       {{ msg  }}
-      <button @click="buttonClick">Click Me!</button>
+      <button @click="buttonClick">Click Me! {{ SOME_VALUE | currencyUSD }} </button>
   </div>
 </template>
 
@@ -14,6 +14,7 @@
             name: 'Ras',
             role: 'Ruffus'
           },
+          SOME_VALUE: 3
         };
       },
       props: {
@@ -25,6 +26,11 @@
           console.log('Im a widget', this.member);
           return true;
         }
+      },
+      filters: {
+      currencyUSD(value) {
+        return '$' + value
       }
+    }
   }
 </script>
