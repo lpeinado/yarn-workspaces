@@ -429,6 +429,15 @@
     loupe "^2.3.6"
     pretty-format "^27.5.1"
 
+"@vue/compat@^3.3.2":
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/@vue/compat/-/compat-3.3.2.tgz#a85d51f5682bd30e2e257c76788a85094c2bdd92"
+  integrity sha512-2NhUUbqa2kn0BHEd0/qJ3QurtyAhG3VuiAUrjNTNXGPrh7QlvfkJGE6I1OX2owds3hm+cci+oUtEgSjBk3drBQ==
+  dependencies:
+    "@babel/parser" "^7.21.3"
+    estree-walker "^2.0.2"
+    source-map-js "^1.0.2"
+
 "@vue/compiler-core@3.3.2":
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/@vue/compiler-core/-/compiler-core-3.3.2.tgz#39567bd15c7f97add97bfc4d44e814df36eb797b"
@@ -456,7 +465,7 @@
     postcss "^8.4.14"
     source-map "^0.6.1"
 
-"@vue/compiler-sfc@3.3.2":
+"@vue/compiler-sfc@3.3.2", "@vue/compiler-sfc@^3.3.2":
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/@vue/compiler-sfc/-/compiler-sfc-3.3.2.tgz#d6467acba8446655bcee7e751441232e5ddebcbf"
   integrity sha512-jG4jQy28H4BqzEKsQqqW65BZgmo3vzdLHTBjF+35RwtDdlFE+Fk1VWJYUnDMMqkFBo6Ye1ltSKVOMPgkzYj7SQ==
