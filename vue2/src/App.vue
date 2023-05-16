@@ -2,6 +2,7 @@
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
 import widget from 'lib/src/widget.vue'
+import vueButton from 'lib/src/vue-button.vue'
 </script>
 
 <template>
@@ -12,6 +13,7 @@ import widget from 'lib/src/widget.vue'
       <div class="wrapper">
         <HelloWorld msg="THIS IS VUE 2" style="border:1px dashed green"/>
         <widget msg="Some message from VUE2 APP"/>
+        <vue-button />
       </div>
     </header>
 

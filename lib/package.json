@@ -1,7 +1,16 @@
 {
   "name": "lib",
   "version": "1.0.0",
-  "dependencies": {
-      "cross-env": "5.0.5"
+  "private": true,
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "main": "./dist/library.ssr.js",
+  "module": "./dist/library.esm.js",
+  "unpkg": "./dist/library.js",
+  "devDependencies": {
+    "rollup": "^0.59.4",
+    "rollup-plugin-css-only": "^0.4.0",
+    "rollup-plugin-vue": "^6.0.0"
   }
 }
