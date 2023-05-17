@@ -7,7 +7,7 @@
 
 <script>
   export default {
-      name: 'widget',
+      name: 'vue-burro',
       data() {
         return {
           member: {
@@ -21,7 +21,7 @@
           msg: String
       },
       methods:{
-        buttonClick() { 
+        buttonClick() {
           this.member["age"] = 3
           console.log('Im a widget', this.member);
           return true;
