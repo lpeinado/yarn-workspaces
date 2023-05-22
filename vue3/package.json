@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@vue/compat": "^3.3.2",
-    "lib": "1.0.0",
+    "lib2": "1.0.0",
     "vue": "^3.3.2"
   },
   "devDependencies": {

@@ -3,6 +3,6 @@
   "workspaces": [
     "vue2",
     "vue3",
-    "lib"
+    "lib2"
   ]
 }

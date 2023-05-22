@@ -11,7 +11,7 @@
   "dependencies": {
     "vue": "^2.7.7",
     "cross-env": "5.0.5",
-    "lib": "1.0.0"
+    "lib2": "1.0.0"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.0",

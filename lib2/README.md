@@ -2,6 +2,8 @@
 install vue globally
 vue create lib2
 
+yarn build --target wc --name lib --inline-vue 'src/components/*.vue'
+
 when prompted answered vue2 and yarn
 ## Project setup
 ```

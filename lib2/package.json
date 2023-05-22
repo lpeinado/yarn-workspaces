@@ -1,7 +1,8 @@
 {
   "name": "lib2",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "main": "dist/lib.min.js",
   "scripts": {
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"

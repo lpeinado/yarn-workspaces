@@ -6,7 +6,7 @@
 
 <script>
   export default {
-      name: 'vue-button',
+      name: 'simple-button',
       methods:{
         buttonClick() {
           console.log('Im a Vue button');

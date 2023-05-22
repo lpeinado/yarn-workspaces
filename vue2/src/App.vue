@@ -1,8 +1,37 @@
-<script setup>
+<script>
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
-import widget from 'lib/src/widget.vue'
-import vueButton from 'lib/src/vue-button.vue'
+import * as myLib from 'lib2'
+
+const msg = "THIS IS VUE 2222";
+const myCar = { make: 'Ford', model: 'Mondeo' };
+
+export default {
+      components: {
+        HelloWorld,
+        TheWelcome,
+        libSimpleButton: myLib.SimpleButton,
+        libComplexButton: myLib.ComplexButton,
+      },
+      name: 'app',
+      data() {
+        return {
+          msg : "THIS IS VUE 2222",
+          myCar : { make: 'Ford', model: { name:'Mondeo'  , status: 'ready'}},
+          messageFromChild: '',
+        };
+      },
+      mounted() {
+        console.log('mounted!')
+        this.myCar = { make: 'Ford', model: { name:'Mondeo'  , status: 'ready'} };
+      },
+      methods:{
+        sendText(event) {
+          console.log('sendText',  event.detail[0].message);
+          this.messageFromChild = event.detail[0].message;
+        }
+      },
+  }
 </script>
 
 <template>
@@ -12,8 +41,12 @@ import vueButton from 'lib/src/vue-button.vue'
 
       <div class="wrapper">
         <HelloWorld msg="THIS IS VUE 2" style="border:1px dashed green"/>
-        <widget msg="Some message from VUE2 APP"/>
-        <vue-button />
+        <lib-simple-button />
+        <lib-complex-button :message="msg" :car.prop="myCar" v-on:send="sendText"/>
+        <div style="margin-top:50px">
+          <span>Message from child event:</span>
+          <span style="border 0.5px dashed brown">{{ messageFromChild }}</span>
+        </div>
       </div>
     </header>
 
